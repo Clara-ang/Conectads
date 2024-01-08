@@ -1,0 +1,82 @@
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+@font-face {
+    font-family: game_over;
+    src: url(/html/Game-Over-Regular/game_over.ttf);
+    
+ }
+ .header {
+    font-size: 3em;
+    color: #0f0;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll 5s linear infinite;
+  }
+  
+.logo{
+    font-size: 14em;
+    text-align: left;
+    color: #fff;
+    position: absolute;
+    left: 10%;
+    font-family:'game over regular';
+    text-decoration:none;
+   
+   
+}
+.header {
+    font-size: 2em;
+    color: #0f0;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll 5s linear infinite;
+  }
+  
+.form {
+    width: 35%; 
+    height: 70%; 
+    background-color: #333;
+    color: #0f0;
+    padding: 120px;
+    border-radius: 10px;
+    margin: auto;
+    align-items: right;
+  }
+  
+  .form h2, .form p {
+    text-align: center; 
+  }
+  
+  .form input, .form button {
+    display: block;
+    width: 50%; 
+    margin: auto; 
+    margin-bottom: 10px; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }

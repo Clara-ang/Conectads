@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: game_over;
+    src: url(/html/Game-Over-Regular/game_over.ttf);
+    
+ }
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: 'game over regular';
+    font-weight: 100;
+    font-size: 450px;
+}
+nav{
+    
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+.logo{
+    color: #ffffff;
+    font-size: 150px;
+    font-weight: 80;
+    font-family:'game over regular';
+    margin: 15% 15% -75%;
+}
+.itens{
+    list-style: none;
+    display: flex;
+    font-family: 'game over regular';
+    font-size: 45%;
+    font-weight: normal;
+
+
+}
+.itens>li>a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-size: 18%;
+}
+.nav-in{
+    margin-top: 15%;
+    display: flex;
+    width: 130px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.nav-in:hover{
+    background-color: #92d4b3;
+    color: white;
+}
+.lista-nav{
+    margin: 0px 10px;
+}
+a{
+    text-decoration: none;
+}

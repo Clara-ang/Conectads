@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        @font-face {
+            font-family: game_over;
+            src: url(/html/Game-Over-Regular/game_over.ttf);
+}
+        .header {
+            font-size: 2em;
+            color: #0f0;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scroll 5s linear infinite;
+        }
+        .title {
+            font-size: 10em;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+            font-family:'game over regular';
+        }
+        .button {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0f0;
+            color: #000;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        01110011 01100101 01110010 11100001 00100000 01110001 01110101 01100101 00100000 01100001 01101100 01100111 01110101 11101001 01101101 00100000 01101100 11101010 00100000 01101001 01110011 01110011 01101111 00111111 
+    </div>
+    <div class="title">
+        Bem-vindo ao ConecTads!
+    </div>
+    <a href="registro2.html" class="button">Registrar</a>
+</body>
+</html>

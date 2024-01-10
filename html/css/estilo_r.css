@@ -41,16 +41,20 @@ src: url(/html/Game-Over-Regular/game_over.ttf);
 }
 
 .w50{
-    width: 100%;
+    width: 50%;
     float: left;
     padding: 10px;
 }
-img{
-    width: 50%;
+img {
+    width: 50%; 
     position: absolute;
     top: 50%;
     left: 5%;
-    transform: translateY(-50%);
+    transform: translateY(-50%);}
+.w51{
+    width: 50%;
+    float: right;
+    padding: 10px;
 }
 .box{
     width: 30%; 
@@ -61,16 +65,14 @@ img{
     margin-left: 45%;
     display: flex;
     
-    
 }
 .form-box{
     text-align: center;
-    padding: 55px;
+    padding: 25px;
     width: 100%;
     border-radius: 20px 20px 20px 20px;
 }
 .form-box h2{
-    margin-top: -15px;
     font-size: 20px;
 }
 .form-box p{
@@ -83,22 +85,23 @@ img{
     color: #ffff;
 }
 .form-box form{
-    margin: 10px 10px;
+    margin: 5px 5px;
 }
 form .input-group{
     margin-bottom: 15px;
 }
 form .input-group label{
-    margin-top: 15px;
+    margin-top: -4px;
     color: #0f0;
     font-size: 14px;
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
     text-align: center;
+    
 }
 form .input-group input{
-    width: 100%;
+    width: 90%;
     height: 37px;
     background-color: #fff;
     border-radius: 5px;
@@ -106,21 +109,38 @@ form .input-group input{
     padding: 15px;
     font-size: 13px;
     color: #616161;
-    margin-bottom: -6px;
+    margin-bottom: -16px;
   
 }
 form .input-group input:focus{
     border-color: #ffffff69;
 }
 form .input-group button{
-    width: 50%;
+    width: 40%;
     height: 25px;
     background: #fff;
     border-radius: 5px;
     outline: none;
     border: none;
-    margin-top: 8px;
+    margin-top: 13px;
     color: #000000;
     cursor: pointer;
     font-size: 15px;
+
+}
+@media (max-width:930px) {
+   
+    .box{
+        width: 700px;
+    }
+    .form-box{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+@media (max-width:500px) {
+    .w50{
+        width: 100%;
+        padding: 0;
+    }
 }

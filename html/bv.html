@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ConecTads</title>
+    <style type="text/css">
+
+    body {
+            font-size: 2em;
+            background-color: #000;
+            color: #fff;
+            font-family:'game over';
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%);}}
+        @font-face {
+            font-family: 'game_over';
+            src: url(/html/Game-Over-Regular/game_over.ttf);}
+        .cabecalho{
+            font-size: 2em;
+            color: #0f0;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scroll 10s linear infinite;
+
+        }
+        .c1 {
+        position: absolute;
+        top: 50%;
+        right: 20%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+    }
+    .c1 a {
+        color: white;
+        font-family: 'game over';
+        font-size: 2em;
+        font-weight: lighter;
+    }
+    .c1 p{
+        font-family: Arial, sans-serif;
+        font-size: 0.5em;
+    }
+    .c1 p a{
+        font-family: 'game over';
+        font-size: 4em;
+    }
+
+        
+    img {
+        width: 50%; 
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="cabecalho">01110011 01100101 01110010 11100001 00100000 01110001 01110101 01100101 00100000 01100001 01101100 01100111 01110101 11101001 01101101 00100000 01101100 11101010 00100000 01101001 01110011 01110011 01101111 00111111 </div>
+    <img src="img/Conectads.pdf.svg" alt="Logo"/>
+    <div class="c1">
+        <h1><a href="login2.html">Conecte-se!</a></h1>
+        <p>~ não fique de fora! ~</p>
+        <p>ou</p>
+        <p><a href="registro2.html">Registre-se agora!</a></p>
+    </div>
+</body>
+</html>

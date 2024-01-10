@@ -1,0 +1,15 @@
+body {
+    background-color: #ce131300;
+    font-family:'game over';
+ }
+ @font-face {
+         font-family: 'game_over';
+         src: url(/html/Game-Over-Regular/game_over.ttf);
+ }
+ .logo{
+    width: 8em;
+    position: absolute;
+    top: 4.5em;
+    left: 1.5em;
+    transform: translateY(-50%);
+}

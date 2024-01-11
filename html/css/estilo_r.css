@@ -51,6 +51,7 @@ img {
     top: 50%;
     left: 5%;
     transform: translateY(-50%);}
+    
 .w51{
     width: 50%;
     float: right;
@@ -126,21 +127,8 @@ form .input-group button{
     color: #000000;
     cursor: pointer;
     font-size: 15px;
-
 }
-@media (max-width:930px) {
-   
-    .box{
-        width: 700px;
-    }
-    .form-box{
-        width: 100%;
-        border-radius: 20px;
-    }
-}
-@media (max-width:500px) {
-    .w50{
-        width: 100%;
-        padding: 0;
-    }
+.input-group button a{
+    text-decoration: none;
+    color: #000;
 }

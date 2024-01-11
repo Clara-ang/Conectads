@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo_home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Home/title>
+    <title>Home</title>
 
 </head>
 <body>
-    <img src="img/icon_logo.svg" alt="Logo" class="logo"/>
+    <!--<img src="img/icon_logo.svg" alt="Logo" class="logo"/>-->
     <nav class="menu-lateral">
         <div class="btn-expandir">
-            <i class="bi bi-menu-up"></i>
+            <img src="img/icon_logo.svg" alt="Logo"/>
             <ul>
                 <li class="item-menu">
                     <a href="home.html">
@@ -25,21 +25,35 @@
                 <li class="item-menu">
                     <a href="#">
                         <span class="icon"><i class="bi bi-chat-right-text"></i></span>
-                            <span class="txt-link">Memsagens</span>
+                        <span class="txt-link">Mensagens</span>
                     </a>
-                </li>
-                        
+                </li>     
                 <li class="item-menu">
                     <a href="#">
                         <span class="icon"><i class="bi bi-person-circle"></i></span>
-                        <span class="txt-link">Perfil</span>
+                        <span class="txt-link">Conta</span>
                     </a>
                 </li>
             </ul>
         </div><!--btn-expandir-->
     </nav><!--menu-lateral-->
-    
-    
+
+    <div class="row input-container">
+        
+        <h1 class="title_post"></h1>
+        <img src="img/Group 8.svg" alt="Usuário"  height="48" width="60"/>
+        <form method="post" action="#">
+            <div class="style-form-input full">
+                <textarea name="mensagem" required></textarea>
+                <label><i class="icon icon-comments"></i> Mensagem</label>
+            </div>
+            <div class="style-form-input full">
+                <input type="hidden" name="acao" value="enviar">
+                <button class="btn-submit"><i class="bi bi-arrow-right-circle-fill"></i></button>
+            
+            </div>
+        </form>
+    </div>
     
 </body>
 </html>

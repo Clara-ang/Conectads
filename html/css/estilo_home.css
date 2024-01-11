@@ -1,15 +1,181 @@
-body {
-    background-color: #ce131300;
-    font-family:'game over';
- }
- @font-face {
-         font-family: 'game_over';
-         src: url(/html/Game-Over-Regular/game_over.ttf);
- }
- .logo{
-    width: 8em;
-    position: absolute;
-    top: 4.5em;
-    left: 1.5em;
-    transform: translateY(-50%);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
+
+body {
+    height: 100vh;
+    background-color: #000;
+}
+   
+ @font-face {
+    font-family: 'game_over';
+    src: url(/html/Game-Over-Regular/game_over.ttf);
+ }
+
+ nav.menu-lateral{
+    width: 90px;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #0f0;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+ }
+ nav.menu-lateral:hover{
+    width: 300px;
+
+ }
+
+.btn-expandir{
+    width: 100%;
+    padding-left: -10px;
+    
+}
+.btn-expandir > img {
+    color: #fff;
+    cursor: pointer;
+    margin-left: -10px;
+    margin-bottom: 30px;
+    width: 75px;
+    height:70px; 
+
+}
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+ul li.item-menu {
+    transition: .2s;
+}
+ul li.item-menu:hover{
+    background: #0f0;
+    
+}
+ul li.item-menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+ul li.item-menu a .txt-link {
+    margin-left: 40px;
+}
+ul li.item-menu a .icon {
+    font-size: 30px;
+    margin-left: 10px;
+}
+/*Formulario de postagem*/
+.title_post {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 50px;
+    height: 50px; 
+    color: #fff;
+    text-align: left;
+    margin-bottom: 20px;
+}
+input:focus ~ label, /*mensagem de cima do formulário*/
+ textarea:focus ~ label, 
+ input:valid ~ label, 
+ textarea:valid ~ label { 
+  font-size: 0.8em;
+  color: rgb(0, 0, 0);
+  top: -21px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+  background: #fcfcfc;
+  padding: 5px 8px;
+  left: 15px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.style-form-input {
+    float: left;
+    width: 295px;
+    margin-left: 30px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 2px;
+}
+
+
+.style-form-input label { /* texto do formulário*/
+    color: #999;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+.style-form-input.full { 
+    top: 30px;
+    width: 600px;
+    height: 150px; 
+    left: 10px;
+}
+input,
+textarea { /*Texto dentro do formulário*/
+    width: 100%;
+    padding: 30px;
+    border: 0;
+    font-size: 1em;
+    background-color: #2d2d2d;
+    color: #0f0;
+    border-radius: 50px;
+}
+input:focus,
+textarea:focus { outline: 0; }
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+   -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+textarea {   /*caixa de texto*/
+    margin-left: -8%;
+    width: 100%;
+   
+}
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+.btn-submit {  /*Botão*/
+    margin-right: 60px;
+    margin-top: -15px;
+    width: 60px;
+    color: #fff;
+    font-size: 1.2em;    
+    float: right;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: #000000;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 #0f0, 0 2px 5px 0 #0f0;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    border:none;
+}
+.btn-submit:hover { /*efeitos do botão*/
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+    0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+
+
